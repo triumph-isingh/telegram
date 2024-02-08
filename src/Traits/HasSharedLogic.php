@@ -99,7 +99,7 @@ trait HasSharedLogic
     public function token(string $token): self
     {
         $this->token = $token;
-
+        $this->telegram->setToken($token);
         return $this;
     }
 
